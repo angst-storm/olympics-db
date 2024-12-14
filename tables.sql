@@ -67,6 +67,14 @@ CREATE TABLE medal_table (
     bronze INTEGER NOT NULL DEFAULT 0
 );
 
+-- Index
+
+CREATE INDEX medal_table_sort_idx ON medal_table USING btree (
+    gold DESC,
+    silver DESC,
+    bronze DESC
+);
+
 -- Views
 
 CREATE OR REPLACE VIEW requests_with_doping_control_result AS
