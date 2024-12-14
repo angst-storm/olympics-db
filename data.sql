@@ -1,3 +1,5 @@
+-- Sports
+
 INSERT INTO sports (name) VALUES ('Aquatics');
 
 INSERT INTO
@@ -50,6 +52,8 @@ VALUES (
         '200 m breaststroke (women)',
         '200 meters of swimming with a breaststroke, requiring strong arm and leg propulsion and a specific body position.'
     );
+
+-- NOCs
 
 INSERT INTO
     nocs (
@@ -131,6 +135,8 @@ VALUES (
         'France'
     );
 
+-- Athletes
+
 INSERT INTO
     athletes (
         noc_code,
@@ -185,6 +191,15 @@ VALUES (
         'August 18, 2006',
         'Canada',
         '0000000013'
+    ),
+    (
+        'USA',
+        'Katherine',
+        'Cadwallader',
+        'Douglass',
+        'November 17, 2001',
+        'United States',
+        '0000000016'
     );
 
 INSERT INTO
@@ -253,14 +268,6 @@ VALUES (
         '000000009'
     ),
     (
-        'NED',
-        'Caspar',
-        'Corbeau',
-        'April 3, 2001',
-        'United States',
-        '000000016'
-    ),
-    (
         'USA',
         'Victoria',
         'Huske',
@@ -283,4 +290,46 @@ VALUES (
         'April 19, 1998',
         'China',
         '000000015'
+    ),
+    (
+        'RSA',
+        'Tatjana',
+        'Smith',
+        'July 9, 1997',
+        'South Africa',
+        '000000017'
+    ),
+    (
+        'NED',
+        'Tes',
+        'Schouten',
+        'December 31, 2000',
+        'Netherlands',
+        '000000018'
     );
+
+-- Requests
+
+INSERT INTO
+    requests (event_id, athlete_id)
+VALUES (1, 1),
+    (1, 7),
+    (1, 8),
+    (1, 9),
+    (2, 10),
+    (2, 11),
+    (2, 12),
+    (3, 10),
+    (3, 2),
+    (3, 13),
+    (4, 3),
+    (4, 14),
+    (4, 4),
+    (5, 5),
+    (5, 15),
+    (5, 16),
+    (6, 6),
+    (6, 17),
+    (6, 18);
+
+UPDATE requests SET qualified = TRUE WHERE athlete_id > 1;
