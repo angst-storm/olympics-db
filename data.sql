@@ -14,6 +14,18 @@ VALUES (
         1,
         'Swimming',
         'World Aquatics'
+    ),
+    (
+        'SWA',
+        1,
+        'Artistic Swimming',
+        'World Aquatics'
+    ),
+    (
+        'ATH',
+        NULL,
+        'Athletics',
+        'World Athletics'
     );
 
 INSERT INTO
