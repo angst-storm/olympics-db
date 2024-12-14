@@ -34,7 +34,7 @@ VALUES (
     ),
     (
         'SWM',
-        '200 m breaststroke (men)',
+        '200 metres breaststroke (men)',
         '200 meters of swimming with a breaststroke, requiring strong arm and leg propulsion and a specific body position.'
     ),
     (
@@ -44,12 +44,12 @@ VALUES (
     ),
     (
         'SWM',
-        '200 m butterfly (women)',
+        '200 metres butterfly (women)',
         '200 meters of swimming with a butterfly stroke, requiring speed, endurance, and underwater undulation.'
     ),
     (
         'SWM',
-        '200 m breaststroke (women)',
+        '200 metres breaststroke (women)',
         '200 meters of swimming with a breaststroke, requiring strong arm and leg propulsion and a specific body position.'
     );
 

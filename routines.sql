@@ -69,7 +69,7 @@ RETURNS TABLE (
 ) AS $$
 	SELECT athlete_id, qualified, doping_control
 	FROM requests_with_doping_control_result
-	WHERE event_id = event_id
+	WHERE event_id = requesters.event_id
 $$ LANGUAGE SQL;
 
 CREATE OR REPLACE FUNCTION admitted_requesters (event_id INTEGER)
