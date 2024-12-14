@@ -12,5 +12,5 @@ SELECT * FROM all_medals (10);
 
 -- Medal table for all NOCs
 SELECT *
-from medal_table
+FROM medal_table
 ORDER BY gold DESC, silver DESC, bronze DESC;
