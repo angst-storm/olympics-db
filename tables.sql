@@ -32,7 +32,7 @@ CREATE TABLE disciplines (
 
 CREATE TABLE events (
     id SERIAL PRIMARY KEY,
-    discipline_code CHAR(3) REFERENCES disciplines (code) NULL,
+    discipline_code CHAR(3) REFERENCES disciplines (code) NOT NULL,
     name VARCHAR NOT NULL,
     description TEXT NOT NULL
 );
