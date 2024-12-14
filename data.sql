@@ -332,4 +332,46 @@ VALUES (1, 1),
     (6, 17),
     (6, 18);
 
+UPDATE requests SET qualified = FALSE WHERE athlete_id = 1;
+
 UPDATE requests SET qualified = TRUE WHERE athlete_id > 1;
+
+-- Doping Controls
+
+CALL add_doping_control (12345, 1, 1, FALSE);
+
+CALL add_doping_control (12345, 1, 7, TRUE);
+
+CALL add_doping_control (12345, 1, 8, TRUE);
+
+CALL add_doping_control (12345, 1, 9, TRUE);
+
+CALL add_doping_control (12345, 2, 10, TRUE);
+
+CALL add_doping_control (12345, 2, 11, TRUE);
+
+CALL add_doping_control (12345, 2, 12, TRUE);
+
+CALL add_doping_control (12345, 3, 10, TRUE);
+
+CALL add_doping_control (12345, 3, 2, TRUE);
+
+CALL add_doping_control (12345, 3, 13, TRUE);
+
+CALL add_doping_control (12345, 4, 3, TRUE);
+
+CALL add_doping_control (12345, 4, 14, TRUE);
+
+CALL add_doping_control (12345, 4, 4, TRUE);
+
+CALL add_doping_control (12345, 5, 5, TRUE);
+
+CALL add_doping_control (12345, 5, 15, TRUE);
+
+CALL add_doping_control (12345, 5, 16, TRUE);
+
+CALL add_doping_control (12345, 6, 6, TRUE);
+
+CALL add_doping_control (12345, 6, 17, TRUE);
+
+CALL add_doping_control (12345, 6, 18, TRUE);
