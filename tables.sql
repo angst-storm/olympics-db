@@ -48,7 +48,7 @@ CREATE TABLE requests (
     event_id INTEGER REFERENCES events (id) NOT NULL,
     athlete_id INTEGER REFERENCES athletes (id) NOT NULL,
     qualified BOOLEAN NULL,
-    doping_control_id INTEGER NULL,
+    doping_control_id INTEGER NULL UNIQUE,
     PRIMARY KEY (event_id, athlete_id)
 );
 
